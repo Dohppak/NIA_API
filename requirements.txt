@@ -1,0 +1,6 @@
+Flask==1.1.2
+gensim==3.8.3
+numpy==1.19.0
+pandas==1.0.3
+six==1.15.0
+sklearn==0.24.1

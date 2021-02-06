@@ -1,0 +1,7 @@
+__pycache__
+/env
+/static
+/notebook
+*.mp4
+*.mp3
+*.wav
