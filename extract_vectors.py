@@ -16,3 +16,5 @@ for i in tqdm(model.wv.vocab):
 
 with open("./static/vectors/word_vectors.pkl", 'wb') as f:
     pickle.dump(word_vectors, f, protocol=pickle.HIGHEST_PROTOCOL)
+
+print("Finish")
