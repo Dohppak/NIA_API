@@ -1,4 +1,4 @@
-# SBA API
+# NIA API
 - input : Pharagraph (str)
 - output : query, model_input, video_results, audio_results
     - query: 유저가 사용한 input pharagraph입니다. (str)
@@ -12,30 +12,29 @@
 - function.py : Detail Method 구현 문서
 - requirements.txt : 사용 파이썬 라이브러리 정보
 - static/audio : 워드 임베딩 모델/백터
-- static/meta : 오디오 메타데이터
-- static/video : 오디오 wav,mp3 데이터
+- static/meta : MSD Path 정보 및 Audio meta, Tag Meta, Video Meta 정보
+- static/video : NIA Highlight Video와 Moments Inference data
+- static/vectors : Simiarilty Search에 필요한 벡터 데이터들
 
 ```sh
 |-- extract_vectors.py
 |-- functions.py
 |-- query_to_meta-api.py
 |-- requirements.txt
-|-- static
+`-- static
     |-- audio
     |-- meta
     |   |-- 7D_id_to_path.pkl
     |   |-- MSD_id_to_7D_id.pkl
     |   |-- audio_meta.pkl
     |   |-- audio_tags.pkl
-    |   |-- video_meta.csv
+    |   `-- video_meta.csv
     |-- vectors
     |   |-- audio_tracks.pkl
-    |   |-- model
     |   |-- video_tags.pkl
-    |   |-- word_vectors.pkl
-    |-- video
-        |-- NIA
-        |-- video_meta
+    |   `-- word_vectors.pkl
+    `-- video
+        `-- video_meta
 ```
 
 #### Requirements
